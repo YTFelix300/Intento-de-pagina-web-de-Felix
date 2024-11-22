@@ -1,0 +1,58 @@
+clases:
+se inician con .(nombre de clase) y se continua con {atributos} los cuales se separan con ;
+ejemplo :
+.Titulo{
+    font-size:50px ;
+    color: white ;
+}
+Todo esto va con un <Style> al principio
+Ejemplo:
+<Style>
+       .title{
+        font-family:'Papa';
+        Color: white ;
+        Font-size: 30px;
+       }
+       .Cuerpo[
+        Font-size: 15px ;
+        color: black;
+       ]
+</style>
+y para meter una fuente de texto personalizada es :
+@font-face con 
+    "font-family: "Minecraft";
+    src: url('f2.otf') format('truetype')" entre {}
+ ejemplo:
+ <style>
+        @font-face:{
+            font-family:'ejemplo';
+            src: url(ejemplo.ttf) format('truetype')
+        }
+donde 'ejemplo' es el nombre asignado y 'f2.ttf' es el nombre de la fuente
+, el nombre de la fuente puede variar , lo puedes editar desde el administrador de archivos
+
+Algo mas que saber de <style>
+puedes dividir un texto usando las clases 
+ejemplo:
+.container {
+            display: flex;
+        }
+        .column {
+            font-family: "Minecraft";
+            width: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 0px solid #ddd;
+            color: white;
+            font-size: 50px;
+        }
+        <body>
+    <div class="container">
+        <div class="column">Minecraft Java y Bedrock</div>
+        <div class="column">Minecraft Dungeons</div>
+        <div class="column">Minecraft Legends</div>
+        <div class="column">Minecraft Education Edition</div>
+    </div>
+Donde :
+<div> es la etiqueta que inserta texto , width el espacio que usara de la pantalla ( puede ser en % o en px) y
+"padding" es la separacion de ese mismo texto
